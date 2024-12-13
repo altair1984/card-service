@@ -1,6 +1,6 @@
 // src/components/Card.test.tsx
 import { render, screen } from '@testing-library/react';
-import Card from './Card'; // Импорт вашего компонента
+import Card from './Card'; 
 
 const product = {
   id: 1,

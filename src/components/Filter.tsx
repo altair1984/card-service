@@ -6,7 +6,7 @@ const Filter = () => {
   const setFilter = useProductStore((state) => state.setFilter);
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFilter(e.target.value); // вызываем setFilter с новым значением
+    setFilter(e.target.value);
   };
 
   return (

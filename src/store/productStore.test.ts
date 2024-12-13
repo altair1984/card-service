@@ -49,7 +49,7 @@ export const useProductStore = create<ProductState>((set) => ({
   },
   setFilter: (filter: string) => {
     set((state: ProductState) => ({
-      filter: filter, // Исправлено, теперь состояние обновляется корректно
+      filter: filter, 
     }));
   },
 }));

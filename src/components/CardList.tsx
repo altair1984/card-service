@@ -8,8 +8,8 @@ type Product = {
   liked: boolean;
   name: string;
   price: number;
-  description: string;  // Добавлено описание
-  image: string;        // Добавлено изображение
+  description: string;  
+  image: string;        
 };
 
 const CardList: React.FC = () => {
@@ -30,8 +30,8 @@ const CardList: React.FC = () => {
         <Card
           key={product.id}
           product={product}
-          toggleLike={toggleLike} // Передаем toggleLike как пропс
-          deleteProduct={deleteProduct} // Передаем deleteProduct как пропс
+          toggleLike={toggleLike} 
+          deleteProduct={deleteProduct}
         />
       ))}
     </div>

@@ -1,8 +1,8 @@
 // src/pages/CreateProductPage.test.tsx
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import CreateProductPage from './CreateProductPage'; // Замените на ваш компонент
+import CreateProductPage from './CreateProductPage'; 
 import { create } from 'zustand';
-import { useProductStore } from '../store/productStore'; // Импорт хранилища
+import { useProductStore } from '../store/productStore'; 
 
 // Создаем мок хранилища для теста
 const mockStore = create(useProductStore);
@@ -21,7 +21,7 @@ it('should add a product correctly', async () => {
   // Ждем обновления состояния
   await waitFor(() => {
     // Проверяем, что продукт добавлен в список
-    expect(mockStore.getState().products.length).toBe(2); // Поскольку один продукт уже был в начальном состоянии
+    expect(mockStore.getState().products.length).toBe(2); 
     expect(mockStore.getState().products[1].name).toBe('New Product');
     expect(mockStore.getState().products[1].description).toBe('New product description');
   });

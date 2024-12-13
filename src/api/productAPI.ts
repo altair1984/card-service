@@ -6,12 +6,12 @@ export interface Product {
     name: string;
     description: string;
     liked: boolean;
-    image: string;  // Обязательное свойство
+    image: string;  
 }
 
 export const fetchProducts = async (): Promise<Product[]> => {
   try {
-    const response = await axios.get('/api/products');  // Здесь можно использовать реальный API.
+    const response = await axios.get('/api/products'); 
     return response.data;
   } catch (error) {
     throw new Error('Ошибка при загрузке продуктов');
